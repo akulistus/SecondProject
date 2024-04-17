@@ -52,6 +52,8 @@
             textBoxSurname.Name = "textBoxSurname";
             textBoxSurname.Size = new Size(200, 23);
             textBoxSurname.TabIndex = 0;
+            textBoxSurname.TextChanged += textChanged;
+            textBoxSurname.KeyPress += isValidChar;
             // 
             // textBox
             // 
@@ -59,6 +61,8 @@
             textBox.Name = "textBox";
             textBox.Size = new Size(200, 23);
             textBox.TabIndex = 1;
+            textBox.TextChanged += textChanged;
+            textBox.KeyPress += isValidChar;
             // 
             // textBoxSecondName
             // 
@@ -66,6 +70,8 @@
             textBoxSecondName.Name = "textBoxSecondName";
             textBoxSecondName.Size = new Size(200, 23);
             textBoxSecondName.TabIndex = 2;
+            textBoxSecondName.TextChanged += textChanged;
+            textBoxSecondName.KeyPress += isValidChar;
             // 
             // dateTimePicker1
             // 
@@ -73,7 +79,7 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 3;
-            dateTimePicker1.Value = new DateTime(2024, 4, 2, 0, 0, 0, 0);
+            dateTimePicker1.Value = new DateTime(2024, 4, 18, 0, 0, 0, 0);
             // 
             // Add
             // 
